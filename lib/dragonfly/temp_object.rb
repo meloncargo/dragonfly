@@ -59,7 +59,7 @@ module Dragonfly
         raise ArgumentError, "#{self.class.name} must be initialized with a String, a Pathname, a File, a Tempfile, another TempObject, something that responds to .tempfile, or something that responds to .path - you gave #{obj.inspect}"
       end
 
-      @tempfile.close if @tempfile
+      # @tempfile.close if @tempfile
 
       # Name
       @name = if name
